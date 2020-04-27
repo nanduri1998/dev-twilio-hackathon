@@ -6,13 +6,12 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { StoreLocatorComponent } from './store-locator/store-locator.component';
-import { VolunteerComponent } from './volunteer/volunteer.component';
-import { StoreOwnerComponent } from './store-owner/store-owner.component';
+
 import { AdminComponent } from './admin/admin.component';
-import { VolunteerViewComponent } from './volunteer-view/volunteer-view.component';
+
 import { VerifyComponent } from './verify/verify.component';
 import { OptionsViewComponent } from './options-view/options-view.component';
+import { CreateStoreComponent } from './create-store/create-store.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +19,14 @@ import { OptionsViewComponent } from './options-view/options-view.component';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    StoreLocatorComponent,
-    VolunteerComponent,
-    StoreOwnerComponent,
+    
+    
+    
     AdminComponent,
-    VolunteerViewComponent,
+    
     VerifyComponent,
-    OptionsViewComponent
+    OptionsViewComponent,
+    CreateStoreComponent
   ],
   imports: [
     BrowserModule,

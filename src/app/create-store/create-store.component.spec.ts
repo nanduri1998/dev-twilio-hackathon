@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VolunteerViewComponent } from './volunteer-view.component';
+import { CreateStoreComponent } from './create-store.component';
 
-describe('VolunteerViewComponent', () => {
-  let component: VolunteerViewComponent;
-  let fixture: ComponentFixture<VolunteerViewComponent>;
+describe('CreateStoreComponent', () => {
+  let component: CreateStoreComponent;
+  let fixture: ComponentFixture<CreateStoreComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ VolunteerViewComponent ]
+      declarations: [ CreateStoreComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(VolunteerViewComponent);
+    fixture = TestBed.createComponent(CreateStoreComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
