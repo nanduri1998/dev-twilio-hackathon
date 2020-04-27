@@ -12,6 +12,7 @@ import { StoreOwnerComponent } from './store-owner/store-owner.component';
 import { AdminComponent } from './admin/admin.component';
 import { VolunteerViewComponent } from './volunteer-view/volunteer-view.component';
 import { VerifyComponent } from './verify/verify.component';
+import { OptionsViewComponent } from './options-view/options-view.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { VerifyComponent } from './verify/verify.component';
     StoreOwnerComponent,
     AdminComponent,
     VolunteerViewComponent,
-    VerifyComponent
+    VerifyComponent,
+    OptionsViewComponent
   ],
   imports: [
     BrowserModule,
