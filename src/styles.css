@@ -1,1 +1,192 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    padding: 30px;
+}
+
+.headline{
+    margin-top: 20px;
+    font-family: Montserrat;
+}
+
+.headline h4{
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+input {
+	font-size: 18px;
+	color: #000;
+	background-color: #fcfcfc;
+	width: 100%;
+	padding: 13px 13px 13px 0px;
+	box-sizing: border-box;
+    border: 3px solid rgba(0, 0, 0, 0);
+    text-align: left;
+}
+input::placeholder{
+    color: #FF1A3A;
+    
+    font-size: 16px;  
+    text-transform: uppercase;
+}
+input:focus {
+	background: #fff;
+	/* border: 3px solid #484848; */
+	outline: none;
+}
+
+.forms {
+    /* border: 1px solid red; */
+    background: transparent;
+    margin-bottom: 40px;
+    /* width: 50%; */
+    margin: 25px auto 0px auto;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 30px; */
+    /* padding: 32px; */
+  }
+  
+  
+  .forms .inps {
+    margin-top: 20px;
+    margin-right: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    /* border: 2px solid red; */
+  }
+  
+  .forms .inps .inps-grp {
+    /* border: 1px solid green; */
+    font-size: 20px;
+    font-family: Montserrat;
+    position: relative;
+    display: flex;
+    color: #484848;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  input[type=tel],
+  input[type=email],
+  input[type=number] {
+    outline: none;
+    border: none;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(120, 120, 120, 0.31);
+    margin-bottom: 7px;
+    outline: none;
+    background: none;
+  }
+  
+  input[type=date] {
+    max-width: 200px;
+    border: none;
+    cursor: pointer;
+    /* border-radius: 30px; */
+    outline: none;
+    background: none;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  input[type=tel]::placeholder,
+  input[type=email]::placeholder {
+    opacity: 0.2;
+  }
+  
+  input[type=radio]{
+    margin-right: 10px;
+  }
+  
+  .forms .inps .inps-grp .ccode {
+    /* border: 1px solid red; */
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    font-family: Montserrat;
+    font-size: 20px;
+    background: transparent;
+    padding-right: 10px;
+    border-right: 1px solid rgba(120, 120, 120, 0.31);
+    /* color: rgba(0, 0, 0, 0.2); */
+  }
+  
+  .forms .inps .inps-grp label {
+    font-size: 18px;
+    margin-top: 5px;
+    /* letter-spacing: 1px; */
+    font-family: Montserrat;
+    color: #484848;
+    text-transform: uppercase;
+  }
+  
+  
+  .forms .inps .inps-grp input[type=text] {
+    border: none;
+    font-family: Montserrat;
+    font-size: 20px;
+    background: none;
+    border-bottom: 1px solid rgba(120, 120, 120, 0.31);
+    margin-bottom: 7px;
+    outline: none;
+  }
+  
+  .forms .inps .inps-grp input[type=password] {
+    border: none;
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    background: none;
+    border-bottom: 1px solid rgba(120, 120, 120, 0.31);
+    margin-bottom: 7px;
+    outline: none;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  button {
+    background: #333;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 40px;
+    color: #fff;
+    transition: background 0.3s;
+    padding: 20px;
+    width: 100%;
+    max-width: 320px;
+    font-family: Montserrat;
+    font-weight: bold;
+    cursor: not-allowed;
+    text-transform: uppercase;
+  }
+  
+  button.active{
+    background: #01142F;
+    cursor: pointer;
+  }
+  
+.terms-info{
+    position: absolute;
+    bottom: 30px;
+}
