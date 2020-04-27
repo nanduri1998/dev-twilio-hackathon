@@ -11,6 +11,7 @@ import { VolunteerComponent } from './volunteer/volunteer.component';
 import { StoreOwnerComponent } from './store-owner/store-owner.component';
 import { AdminComponent } from './admin/admin.component';
 import { VolunteerViewComponent } from './volunteer-view/volunteer-view.component';
+import { VerifyComponent } from './verify/verify.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { VolunteerViewComponent } from './volunteer-view/volunteer-view.componen
     VolunteerComponent,
     StoreOwnerComponent,
     AdminComponent,
-    VolunteerViewComponent
+    VolunteerViewComponent,
+    VerifyComponent
   ],
   imports: [
     BrowserModule,
