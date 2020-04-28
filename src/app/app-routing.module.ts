@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { OptionsViewComponent } from './options-view/options-view.component';
 import { RegisterComponent } from './register/register.component';
 import { VerifyComponent } from './verify/verify.component';
+import { AllnewsComponent } from './allnews/allnews.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'options-view',
     component: OptionsViewComponent
+  },
+  {
+    path : 'allnews',
+    component: AllnewsComponent
   },
   {
     path: 'register',

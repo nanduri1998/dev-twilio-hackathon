@@ -12,6 +12,7 @@ import { AdminComponent } from './admin/admin.component';
 import { VerifyComponent } from './verify/verify.component';
 import { OptionsViewComponent } from './options-view/options-view.component';
 import { CreateStoreComponent } from './create-store/create-store.component';
+import { AllnewsComponent } from './allnews/allnews.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CreateStoreComponent } from './create-store/create-store.component';
     AdminComponent,
     VerifyComponent,
     OptionsViewComponent,
-    CreateStoreComponent
+    CreateStoreComponent,
+    AllnewsComponent
   ],
   imports: [
     BrowserModule,
