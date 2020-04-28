@@ -17,6 +17,22 @@ img{
     padding: 30px;
 }
 
+.container-header {
+  border-bottom: 1px solid rgba(120, 120, 120, 0.1);
+  width: 100% !important;
+  height: 85px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fcfcfc;
+  font-size: 20px;
+  
+  color: #000;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
 .headline{
     margin-top: 20px;
     font-family: Montserrat;

@@ -19,11 +19,7 @@ import { CreateStoreComponent } from './create-store/create-store.component';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    
-    
-    
     AdminComponent,
-    
     VerifyComponent,
     OptionsViewComponent,
     CreateStoreComponent
