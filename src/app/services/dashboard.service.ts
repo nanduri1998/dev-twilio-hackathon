@@ -15,4 +15,8 @@ export class DashboardService {
   getWeather(city) {
     return this.http.get<any>('https://api.openweathermap.org/data/2.5/weather?appid=8598c1b0b4e91b68974101d97a10552b&q=' + city);
   }
+
+  getdataSummary() {
+    return this.http.get<any>('https://api.rootnet.in/covid19-in/stats/latest');
+  }
 }
