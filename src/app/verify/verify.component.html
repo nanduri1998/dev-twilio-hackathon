@@ -11,12 +11,12 @@
     </div>
     <form class="otp" autocomplete="off" novalidate name="otp">
         <fieldset>
-          <input maxlength="1" name="one" [(ngModel)]="otp.one" (keyup)="keytab($event)"/>
-          <input maxlength="1" name="two" [(ngModel)]="otp.two" (keyup)="keytab($event)"/>
-          <input maxlength="1" name="three" [(ngModel)]="otp.three" (keyup)="keytab($event)"/>
-          <input maxlength="1" name="four" [(ngModel)]="otp.four" (keyup)="keytab($event)"/>
-          <input maxlength="1" name="five" [(ngModel)]="otp.five" (keyup)="keytab($event)"/>
-          <input maxlength="1" name="six" [(ngModel)]="otp.six"/>
+          <input maxlength="1" type="number" name="one" [(ngModel)]="otp.one" (keyup)="keytab($event)"/>
+          <input maxlength="1" type="number" name="two" [(ngModel)]="otp.two" (keyup)="keytab($event)"/>
+          <input maxlength="1" type="number" name="three" [(ngModel)]="otp.three" (keyup)="keytab($event)"/>
+          <input maxlength="1" type="number" name="four" [(ngModel)]="otp.four" (keyup)="keytab($event)"/>
+          <input maxlength="1" type="number" name="five" [(ngModel)]="otp.five" (keyup)="keytab($event)"/>
+          <input maxlength="1" type="number" name="six" [(ngModel)]="otp.six"/>
         </fieldset>
       </form>
     <div class="button-container">
