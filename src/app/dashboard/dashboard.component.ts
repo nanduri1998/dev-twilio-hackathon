@@ -22,7 +22,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     this.dashboard.getLocation().subscribe(data => {
       console.log(data);
-      if (data.status === 'success') {
+      if (data) {
         this.dashboard.getWeather(data.city).subscribe(data1 => {
           console.log(data1);
           this.temp = Math.floor(parseFloat(data1.main.temp) - 273.15);
