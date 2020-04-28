@@ -26,7 +26,7 @@ export class DashboardComponent implements OnInit {
         this.dashboard.getWeather(data.city).subscribe(data1 => {
           console.log(data1);
           this.temp = Math.floor(parseFloat(data1.main.temp) - 273.15);
-          this.icon = 'http://openweathermap.org/img/wn/' + data1.weather[0].icon + '@2x.png';
+          this.icon = 'https://openweathermap.org/img/wn/' + data1.weather[0].icon + '@2x.png';
           this.city = data1.name;
           this.descriptionWeather = String(data1.weather[0].description).toString().toUpperCase();
         });
