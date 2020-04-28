@@ -1,12 +1,30 @@
-.otp fieldset, .otp input {
-    border: none;
-    float: left;
-  }
-  .otp input {
-    width: 40px;
-    padding: 5px;
-    margin-right: 20px;
-    border-bottom: 2px solid #999;
-    text-align: center;
-    font-size: 26px;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hero-image{
+  max-width: 300px;
+  
+}
+form{
+  width: fit-content;
+}
+.otp fieldset,
+.otp input {
+  border: none;
+  float: left;
+}
+.otp input {
+  width: 40px;
+  padding: 5px;
+  margin-right: 20px;
+  border-bottom: 2px solid #999;
+  text-align: center;
+  font-size: 26px;
+}
+
+.otp input:last-child{
+  margin-right: 0px;
+}
