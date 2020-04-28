@@ -8,11 +8,13 @@ import { OptionsViewComponent } from './options-view/options-view.component';
 import { RegisterComponent } from './register/register.component';
 import { VerifyComponent } from './verify/verify.component';
 import { AllnewsComponent } from './allnews/allnews.component';
+import { AuthGaurdService as AuthGuard } from './services/auth-gaurd.service';
+
 
 
 const routes: Routes = [
   {
-    path: 'login',
+    path: 'login/:id',
     component: LoginComponent
   },
   {
@@ -25,7 +27,8 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    component: DashboardComponent
+    component: DashboardComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'options-view',
@@ -40,12 +43,12 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
-    path: 'verify',
+    path: 'verify/:flow/:id',
     component: VerifyComponent
   },
   {
     path: '**',
-    redirectTo: 'login'
+    redirectTo: 'register'
   }
 ];
 

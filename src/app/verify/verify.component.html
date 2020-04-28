@@ -9,19 +9,20 @@
         <h4>Verify</h4>
         <p>Please enter the otp send to your mobile number</p>
     </div>
-    <form class="otp" autocomplete="off" novalidate>
+    <form class="otp" autocomplete="off" novalidate name="otp">
         <fieldset>
-          <input maxlength="1"/>
-          <input maxlength="1"/>
-          <input maxlength="1"/>
-          <input maxlength="1"/>
-          <input maxlength="1"/>
-          <input maxlength="1"/>
+          <input maxlength="1" name="one" [(ngModel)]="otp.one" (keyup)="keytab($event)"/>
+          <input maxlength="1" name="two" [(ngModel)]="otp.two" (keyup)="keytab($event)"/>
+          <input maxlength="1" name="three" [(ngModel)]="otp.three" (keyup)="keytab($event)"/>
+          <input maxlength="1" name="four" [(ngModel)]="otp.four" (keyup)="keytab($event)"/>
+          <input maxlength="1" name="five" [(ngModel)]="otp.five" (keyup)="keytab($event)"/>
+          <input maxlength="1" name="six" [(ngModel)]="otp.six"/>
         </fieldset>
       </form>
     <div class="button-container">
-        <button>SIGN IN</button>
+        <button (click)="submit()">SIGN IN</button>
     </div>
+  
 </div>
 
 

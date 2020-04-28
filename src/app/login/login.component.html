@@ -2,23 +2,25 @@
     <div class="container-header">
         <h2>Create Account</h2>
     </div>
-    <div class="forms">
-        <div class="inps">
-            <div class="inps-grp">
-                <input type="text" name="firstname" autocomplete="off" id="firstname" required>
-                <label for="name">First Name</label>
-            </div>
-            <div class="inps-grp">
-                <input type="text" name="lastname" autocomplete="off" id="lastname" required>
-                <label for="name">Last Name</label>
-            </div>
-            <div class="inps-grp">
-                <input type="number" name="number" autocomplete="off" id="age" required>
-                <label for="name">Age</label>
+    <form autocomplete="off" name="userform" method="post" #formCtrl="ngForm" (ngSubmit)="register()">
+        <div class="forms">
+            <div class="inps">
+                <div class="inps-grp">
+                    <input type="text" name="firstname" autocomplete="off" id="firstname" required [(ngModel)]="firstname">
+                    <label for="name">First Name</label>
+                </div>
+                <div class="inps-grp">
+                    <input type="text" name="lastname" autocomplete="off" id="lastname" required [(ngModel)]="lastname">
+                    <label for="name">Last Name</label>
+                </div>
+                <div class="inps-grp">
+                    <input type="number" name="number" autocomplete="off" id="age" required [(ngModel)]="age">
+                    <label for="name">Age</label>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="button-container">
-        <button>GET STARTED</button>
-    </div>
+        <div class="button-container">
+            <button type="submit">GET STARTED</button>
+        </div>
+    </form>
 </div>

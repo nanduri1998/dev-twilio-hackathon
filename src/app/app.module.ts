@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -13,6 +15,19 @@ import { VerifyComponent } from './verify/verify.component';
 import { OptionsViewComponent } from './options-view/options-view.component';
 import { CreateStoreComponent } from './create-store/create-store.component';
 import { AllnewsComponent } from './allnews/allnews.component';
+import { AuthGaurdService } from './services/auth-gaurd.service';
+import { AuthService } from './services/auth.service';
+import { JwtModule, JwtModuleOptions } from '@auth0/angular-jwt';
+
+export function tokenGetter() {
+  return sessionStorage.getItem('token');
+}
+
+const JWT_Module_Options: JwtModuleOptions = {
+  config: {
+      tokenGetter
+  }
+};
 
 @NgModule({
   declarations: [
@@ -28,9 +43,12 @@ import { AllnewsComponent } from './allnews/allnews.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    JwtModule.forRoot(JWT_Module_Options)
   ],
-  providers: [],
+  providers: [AuthGaurdService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

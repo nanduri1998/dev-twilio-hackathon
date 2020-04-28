@@ -1,7 +1,7 @@
 <div class="container">
     <div class="headline">
-        <div class="time">13:49</div>
-        <img src="assets/images/Info.png">
+        <div class="time">{{time | date:'hh:mm a'}}</div>
+        <img src="assets/images/Info.png" (click)="logout()">
     </div>
     <div class="category-block">
         <h4>What are you looking for?</h4>
@@ -27,12 +27,12 @@
 
     <div class="weather">
 
-        <img src="assets/images/sunny.png">
+        <img src="{{icon}}" width="60" height="58">
         <div class="weather-report">
-            <p>Mostly Sunny</p>
-            <p>Chance of rain: 10%</p>
+            <p>{{descriptionWeather}}</p>
+            <p>{{city}}</p>
         </div>
-        <p class="degree"> 30</p>
+        <p class="degree"> {{temp}}</p>
     </div>
 
     <div class="live-updates">
