@@ -1,38 +1,52 @@
 <div class="container">
-    <div class="hero-image">
-      <div>
+  <div class="content1">
+    <div class="login-text">
+      <img src="assets/images/verify.png">
+      <h4 class="text-head">Verify</h4>
+      <p>Please enter the otp send to your mobile number</p>
+    </div>
+    <div class="forms">
+      <form class="otp" autocomplete="off" novalidate name="otp">
+        <div class="inps">
+          <div class="inps-grp">
+            <input maxlength="1" type="number" name="one" [(ngModel)]="otp.one" required (keyup)="keytab($event)"
+              [(ngModel)]="phone">
+          </div>
+        </div>
+        <div class="inps">
+          <div class="inps-grp">
+            <input maxlength="1" type="number" name="two" [(ngModel)]="otp.two" required (keyup)="keytab($event)"
+              [(ngModel)]="phone">
+          </div>
+        </div>
+        <div class="inps">
+          <div class="inps-grp">
+            <input maxlength="1" type="number" name="three" [(ngModel)]="otp.three" required (keyup)="keytab($event)"
+              [(ngModel)]="phone">
+          </div>
+        </div>
+        <div class="inps">
+          <div class="inps-grp">
+            <input maxlength="1" type="number" name="four" [(ngModel)]="otp.four" required (keyup)="keytab($event)"
+              [(ngModel)]="phone">
+          </div>
+        </div>
+        <div class="inps">
+          <div class="inps-grp">
+            <input maxlength="1" type="number" name="five" [(ngModel)]="otp.five" required (keyup)="keytab($event)"
+              [(ngModel)]="phone">
+          </div>
+        </div>
+        <div class="inps">
+          <div class="inps-grp">
+            <input maxlength="1" type="number" name="six" [(ngModel)]="otp.six" required [(ngModel)]="phone">
+          </div>
+        </div>
 
-        <img src="assets/images/verify.png">
+      </form>
+      <div class="button-container">
+        <button (click)="submit()">SIGN IN</button>
       </div>
     </div>
-    <div class="headline">
-        <h4>Verify</h4>
-        <p>Please enter the otp send to your mobile number</p>
-    </div>
-    <form class="otp" autocomplete="off" novalidate name="otp">
-        <fieldset>
-          <input maxlength="1" type="number" name="one" [(ngModel)]="otp.one" (keyup)="keytab($event)"/>
-          <input maxlength="1" type="number" name="two" [(ngModel)]="otp.two" (keyup)="keytab($event)"/>
-          <input maxlength="1" type="number" name="three" [(ngModel)]="otp.three" (keyup)="keytab($event)"/>
-          <input maxlength="1" type="number" name="four" [(ngModel)]="otp.four" (keyup)="keytab($event)"/>
-          <input maxlength="1" type="number" name="five" [(ngModel)]="otp.five" (keyup)="keytab($event)"/>
-          <input maxlength="1" type="number" name="six" [(ngModel)]="otp.six"/>
-        </fieldset>
-      </form>
-    <div class="button-container">
-        <button (click)="submit()">SIGN IN</button>
-    </div>
-  
+  </div>
 </div>
-
-
-<!-- 
-using jquery to fill in otp
-
-  $('.otp input').on('keyup change', function(){
-  $t = $(this);
-  if ($t.val().length > 0) {
-    $t.next().focus();
-  }
-});
- -->

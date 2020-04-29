@@ -1,26 +1,33 @@
 <div class="container">
-    <div class="hero-image">
-        <img src="assets/images/auth.png">
-    </div>
-    <div class="headline">
-        <h4>Welcome,</h4>
-        <p>Sign in to continue</p>
-    </div>
-    <form autocomplete="off" name="userform" method="post" #formCtrl="ngForm" (ngSubmit)="login()">
+    <div class="content1">
+        <div class="login-text">
+            <img src="assets/images/auth.png">
+            <h4 class="text-head">Welcome,</h4>
+            <p>Sign in to continue</p>
+        </div>
         <div class="forms">
-            <div class="inps">
-                <div class="inps-grp">
-                    <input type="tel" name="number" autocomplete="off" id="phone" required [(ngModel)]="phone">
-                    <label for="name">Enter Mobile Number</label>
+            <form autocomplete="off" name="userform" method="post" #formCtrl="ngForm" (ngSubmit)="login()">
+                <div class="forms">
+                    <div class="inps">
+                        <div class="inps-grp">
+                            <input type="tel" name="number" autocomplete="off" placeholder="0123456789"id="phone" required [(ngModel)]="phone">
+                            <label for="name">Enter Mobile Number</label>
+                        </div>
+                    </div>
                 </div>
+
+            </form>
+            <div class="button-container">
+
+
+                <button type="submit">Next</button>
+
+            </div>
+            <div class="forgot-agree">
+                <p>By clicking 'NEXT' you agree to our terms and conditions.
+                </p>
             </div>
         </div>
-        <div class="button-container">
-            <button type="submit">Next</button>
-        </div>
-    </form>
-    <div class="terms-info">
-        <p>By clicking 'NEXT' you agree to our terms and conditions.</p>
-    </div>
 
+    </div>
 </div>

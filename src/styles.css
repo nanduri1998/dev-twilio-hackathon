@@ -20,7 +20,7 @@ img{
 .container{
     height: 100vh;
     width: 100vw;
-    padding: 30px;
+    padding: 12px;
 }
 
 .container-header {
@@ -208,7 +208,3 @@ input:focus {
     cursor: pointer;
   }
   
-.terms-info{
-    position: absolute;
-    bottom: 30px;
-}
