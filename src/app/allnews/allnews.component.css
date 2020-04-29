@@ -28,6 +28,7 @@
     /* justify-content: space-evenly; */
     max-width: 330px;
     min-height: 120px;
+    margin: 20px auto;
 }
 
 .left-block{

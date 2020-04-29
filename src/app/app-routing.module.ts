@@ -7,8 +7,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { OptionsViewComponent } from './options-view/options-view.component';
 import { RegisterComponent } from './register/register.component';
 import { VerifyComponent } from './verify/verify.component';
+import { OneMoreStepComponent } from './one-more-step/one-more-step.component';
 import { AllnewsComponent } from './allnews/allnews.component';
 import { AuthGaurdService as AuthGuard } from './services/auth-gaurd.service';
+import { from } from 'rxjs';
 
 
 
@@ -22,13 +24,17 @@ const routes: Routes = [
     component: CreateStoreComponent
   },
   {
+    path: 'one-more-step',
+    component: OneMoreStepComponent
+  },
+  {
     path: 'admin',
     component: AdminComponent
   },
   {
     path: 'dashboard',
-    component: DashboardComponent,
-    canActivate: [AuthGuard]
+    component: DashboardComponent
+    // canActivate: [AuthGuard]
   },
   {
     path: 'options-view',
@@ -43,7 +49,7 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
-    path: 'verify/:flow/:id',
+    path: 'verify',
     component: VerifyComponent
   },
   {

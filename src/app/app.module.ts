@@ -18,6 +18,7 @@ import { AllnewsComponent } from './allnews/allnews.component';
 import { AuthGaurdService } from './services/auth-gaurd.service';
 import { AuthService } from './services/auth.service';
 import { JwtModule, JwtModuleOptions } from '@auth0/angular-jwt';
+import { OneMoreStepComponent } from './one-more-step/one-more-step.component';
 
 export function tokenGetter() {
   return sessionStorage.getItem('token');
@@ -39,7 +40,8 @@ const JWT_Module_Options: JwtModuleOptions = {
     VerifyComponent,
     OptionsViewComponent,
     CreateStoreComponent,
-    AllnewsComponent
+    AllnewsComponent,
+    OneMoreStepComponent
   ],
   imports: [
     BrowserModule,

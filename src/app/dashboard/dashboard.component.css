@@ -1,6 +1,7 @@
 .container {
   background: #0c213e;
   color: #fff;
+  height: auto;
 }
 
 img {
