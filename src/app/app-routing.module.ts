@@ -13,6 +13,7 @@ import { AllnewsComponent } from './allnews/allnews.component';
 import { AuthGaurdService as AuthGuard } from './services/auth-gaurd.service';
 import { from } from 'rxjs';
 import { MedicalComponent } from './medical/medical.component';
+import { SmsViewComponent } from './sms-view/sms-view.component';
 
 
 
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: 'one-more-step/:storeid',
     component: OneMoreStepComponent
+  },
+  {
+    path: 'sms/:storeid',
+    component: SmsViewComponent
   },
   {
     path: 'store-view',

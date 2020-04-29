@@ -147,4 +147,8 @@ export class DashboardComponent implements OnInit {
   news() {
     this.router.navigate(['/allnews']);
   }
+
+  stores() {
+    this.router.navigate(['/store-view']);
+  }
 }
