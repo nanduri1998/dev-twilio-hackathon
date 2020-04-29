@@ -1,4 +1,5 @@
 .container {
+  height: unset;
   background: #0c213e;
 }
 
