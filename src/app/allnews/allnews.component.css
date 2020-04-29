@@ -57,3 +57,8 @@
 .right-block p{
     font-weight: 400;
 }
+
+.image {
+  width: 100px;
+  height: 160px;
+}

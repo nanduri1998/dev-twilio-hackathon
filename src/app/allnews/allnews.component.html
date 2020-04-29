@@ -1,36 +1,17 @@
 <div class="container">
     <div class="headline">
-        <img src="assets/images/back.png">
+        <img src="assets/images/back.png" (click)="back()">
         <h4>News</h4>
     </div>
-    <div class="news-block">
+    <div class="news-block" *ngFor="let news of finalArray">
         <div class="left-block">
-            <img src="assets/images/sunny.png">
+            <img src="{{news.urlToImage}}" class="image">
         </div>
         <div class="right-block">
-            <h4>Headline</h4>
-            <h5>Some text</h5>
-            <p>Thu</p>
-        </div>
-    </div>
-    <div class="news-block">
-        <div class="left-block">
-            <img src="assets/images/sunny.png">
-        </div>
-        <div class="right-block">
-            <h4>Headline</h4>
-            <h5>Some text</h5>
-            <p>Thu</p>
-        </div>
-    </div>
-    <div class="news-block">
-        <div class="left-block">
-            <img src="assets/images/sunny.png">
-        </div>
-        <div class="right-block">
-            <h4>Headline</h4>
-            <h5>Some text</h5>
-            <p>Thu</p>
+            <h4>{{news.title}}</h4>
+            <h5>{{news.description}}</h5>
+            <p>{{news.publishedAt | date:'dd/MM/yyyy hh:mm'}}</p>
+            <a href="{{news.url}}">Read More</a>
         </div>
     </div>
 

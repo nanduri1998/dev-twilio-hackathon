@@ -144,4 +144,7 @@ export class DashboardComponent implements OnInit {
   medical() {
     this.router.navigate(['/medical']);
   }
+  news() {
+    this.router.navigate(['/allnews']);
+  }
 }
