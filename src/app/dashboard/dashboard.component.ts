@@ -63,36 +63,29 @@ export class DashboardComponent implements OnInit {
       this.time = new Date();
     }, 1);
   }
-<<<<<<< HEAD
+
   emergency() {
-    console.log('dialing the emergency number');
-    window.location.href = 'tel:' + '';
-=======
-  emergency(){
-    
+
     this.dashboard.getemergencynumber().subscribe(data => {
 
       if (data.success === true) {
         const array = data.data.contacts.regional;
         array.forEach(element => {
 
-          if(this.state == "Telangana"){
-            if(element.loc=="Telengana"){
-              window.location.href = "tel:"+element.number;
+          if (this.state === 'Telangana') {
+            if (element.loc === 'Telengana') {
+              window.location.href = 'tel:' + element.number;
             }
+          } else if (element.loc === this.state) {
+            window.location.href = 'tel:' + element.number;
           }
 
-          else if (element.loc==this.state){
-            window.location.href = "tel:"+element.number;
-          }
-
-        });;
+        });
 
       }
 
     });
 
->>>>>>> 92c60ff8c5b202a0be80c201244ee760aa640e62
   }
  getdatasummary(state) {
     this.dashboard.getdataSummary().subscribe(data => {
