@@ -19,8 +19,7 @@ export class DashboardService {
   getdataSummary() {
     return this.http.get<any>('https://api.rootnet.in/covid19-in/stats/latest');
   }
-  //To be added
-  // getemergencynumber() {
-  //   return this.http.get<any>('https://api.rootnet.in/covid19-in/stats/latest');
-  // }
+  getemergencynumber() {
+    return this.http.get<any>('https://api.rootnet.in/covid19-in/contacts');
+  }
 }
