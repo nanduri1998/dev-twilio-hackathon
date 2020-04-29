@@ -8,6 +8,7 @@ import { OptionsViewComponent } from './options-view/options-view.component';
 import { RegisterComponent } from './register/register.component';
 import { VerifyComponent } from './verify/verify.component';
 import { OneMoreStepComponent } from './one-more-step/one-more-step.component';
+import { StoreViewComponent } from './store-view/store-view.component';
 import { AllnewsComponent } from './allnews/allnews.component';
 import { AuthGaurdService as AuthGuard } from './services/auth-gaurd.service';
 import { from } from 'rxjs';
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'one-more-step',
     component: OneMoreStepComponent
+  },
+  {
+    path: 'store-view',
+    component: StoreViewComponent
   },
   {
     path: 'admin',
