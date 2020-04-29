@@ -20,11 +20,13 @@ import { AuthService } from './services/auth.service';
 import { JwtModule, JwtModuleOptions } from '@auth0/angular-jwt';
 import { OneMoreStepComponent } from './one-more-step/one-more-step.component';
 import { StoreViewComponent } from './store-view/store-view.component';
+import { AgmCoreModule, GoogleMapsAPIWrapper } from '@agm/core';
 
 export function tokenGetter() {
   return sessionStorage.getItem('token');
 }
 
+// tslint:disable-next-line: variable-name
 const JWT_Module_Options: JwtModuleOptions = {
   config: {
       tokenGetter
@@ -50,9 +52,12 @@ const JWT_Module_Options: JwtModuleOptions = {
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    JwtModule.forRoot(JWT_Module_Options)
+    JwtModule.forRoot(JWT_Module_Options),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDrE_UJ643tqL3B0yEmtiug_r-1-F4LGyA'
+    })
   ],
-  providers: [AuthGaurdService, AuthService],
+  providers: [AuthGaurdService, AuthService, GoogleMapsAPIWrapper],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

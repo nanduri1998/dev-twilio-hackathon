@@ -9,31 +9,31 @@
       <form class="otp" autocomplete="off" novalidate name="otp">
         <div class="inps">
           <div class="inps-grp">
-            <input maxlength="1" type="number" name="one" [(ngModel)]="otp.one" required (keyup)="keytab($event)"
+            <input maxlength="1" type="number" name="one" [(ngModel)]="otp.one" required (keyup)="keytab($event, 1)"
               [(ngModel)]="phone">
           </div>
         </div>
         <div class="inps">
           <div class="inps-grp">
-            <input maxlength="1" type="number" name="two" [(ngModel)]="otp.two" required (keyup)="keytab($event)"
+            <input maxlength="1" type="number" name="two" [(ngModel)]="otp.two" required (keyup)="keytab($event, 2)"
               [(ngModel)]="phone">
           </div>
         </div>
         <div class="inps">
           <div class="inps-grp">
-            <input maxlength="1" type="number" name="three" [(ngModel)]="otp.three" required (keyup)="keytab($event)"
+            <input maxlength="1" type="number" name="three" [(ngModel)]="otp.three" required (keyup)="keytab($event, 3)"
               [(ngModel)]="phone">
           </div>
         </div>
         <div class="inps">
           <div class="inps-grp">
-            <input maxlength="1" type="number" name="four" [(ngModel)]="otp.four" required (keyup)="keytab($event)"
+            <input maxlength="1" type="number" name="four" [(ngModel)]="otp.four" required (keyup)="keytab($event, 4)"
               [(ngModel)]="phone">
           </div>
         </div>
         <div class="inps">
           <div class="inps-grp">
-            <input maxlength="1" type="number" name="five" [(ngModel)]="otp.five" required (keyup)="keytab($event)"
+            <input maxlength="1" type="number" name="five" [(ngModel)]="otp.five" required (keyup)="keytab($event, 5)"
               [(ngModel)]="phone">
           </div>
         </div>

@@ -25,7 +25,7 @@ const routes: Routes = [
     component: CreateStoreComponent
   },
   {
-    path: 'one-more-step',
+    path: 'one-more-step/:storeid',
     component: OneMoreStepComponent
   },
   {
@@ -54,7 +54,7 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
-    path: 'verify',
+    path: 'verify/:flow/:id',
     component: VerifyComponent
   },
   {

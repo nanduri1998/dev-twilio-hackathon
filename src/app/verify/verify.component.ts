@@ -47,8 +47,9 @@ export class VerifyComponent implements OnInit {
     });
   }
 
-  keytab(event) {
-    const nextInput = event.srcElement.nextElementSibling; // get the sibling element
+  keytab(event, i) {
+    console.log(event);
+    const nextInput = event.srcElement.form[i];
 
     const target = event.target || event.srcElement;
     const id = target.id;

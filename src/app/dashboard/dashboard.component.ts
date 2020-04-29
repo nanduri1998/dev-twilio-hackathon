@@ -1,4 +1,4 @@
-import { Component, OnInit,HostListener } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { DashboardService } from '../services/dashboard.service';
 import { Router } from '@angular/router';
 
@@ -63,9 +63,9 @@ export class DashboardComponent implements OnInit {
       this.time = new Date();
     }, 1);
   }
-  emergency(){
-    console.log("dialing the emergency number");
-    window.location.href="tel:"+"";
+  emergency() {
+    console.log('dialing the emergency number');
+    window.location.href = 'tel:' + '';
   }
  getdatasummary(state) {
     this.dashboard.getdataSummary().subscribe(data => {

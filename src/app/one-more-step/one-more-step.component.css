@@ -27,3 +27,5 @@ input[type="search"]::placeholder {
   color: #ccc;
   background: none;
 }
+
+agm-map { height: 100%; }
