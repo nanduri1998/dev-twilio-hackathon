@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sms-view.component.css']
 })
 export class SmsViewComponent implements OnInit {
-
+  places = {
+    lat: 0,
+    lng: 0
+  };
   constructor() { }
 
   ngOnInit() {

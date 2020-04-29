@@ -1,5 +1,7 @@
 <div class="container">
-    <!-- <agm-map></agm-map> -->
+    <agm-map [latitude]="places.lat" [longitude]="places.lng" mapTypeId="roadmap" [zoom]="12">
+        <agm-marker latitude="{{places.lat}}" longitude="{{places.lng}}"></agm-marker>
+    </agm-map>
     <div class="enclosing-container">
 
         <div class="bottom-container">
@@ -23,3 +25,4 @@
         </div>
     </div>
 </div>
+

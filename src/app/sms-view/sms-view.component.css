@@ -34,9 +34,7 @@
     padding-left: 10px;
     padding-bottom: 10px;
 }
-a{
-    /* text-decoration: none; */
-}
+
 a:visited{
     color: #fff;
 }
@@ -64,3 +62,5 @@ p.last{
     padding: 10px;
     border-radius: 6px;
 }
+
+agm-map { height: 100%; }
