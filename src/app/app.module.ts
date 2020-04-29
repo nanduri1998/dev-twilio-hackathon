@@ -25,6 +25,7 @@ import { MedicalComponent } from './medical/medical.component';
 import { GroceriesComponent } from './groceries/groceries.component';
 import { MapViewComponent } from './map-view/map-view.component';
 import { SmsViewComponent } from './sms-view/sms-view.component';
+import { NewsLocationComponent } from './news-location/news-location.component';
 
 export function tokenGetter() {
   return sessionStorage.getItem('token');
@@ -53,7 +54,8 @@ const JWT_Module_Options: JwtModuleOptions = {
     MedicalComponent,
     GroceriesComponent,
     MapViewComponent,
-    SmsViewComponent
+    SmsViewComponent,
+    NewsLocationComponent
   ],
   imports: [
     BrowserModule,
