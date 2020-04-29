@@ -140,4 +140,8 @@ export class DashboardComponent implements OnInit {
     sessionStorage.removeItem('authyid');
     this.router.navigate(['/register']);
   }
+
+  medical() {
+    this.router.navigate(['/medical']);
+  }
 }

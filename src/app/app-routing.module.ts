@@ -12,6 +12,7 @@ import { StoreViewComponent } from './store-view/store-view.component';
 import { AllnewsComponent } from './allnews/allnews.component';
 import { AuthGaurdService as AuthGuard } from './services/auth-gaurd.service';
 import { from } from 'rxjs';
+import { MedicalComponent } from './medical/medical.component';
 
 
 
@@ -48,6 +49,10 @@ const routes: Routes = [
   {
     path : 'allnews',
     component: AllnewsComponent
+  },
+  {
+    path : 'medical',
+    component: MedicalComponent
   },
   {
     path: 'register',
