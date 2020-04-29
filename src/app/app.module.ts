@@ -21,6 +21,9 @@ import { JwtModule, JwtModuleOptions } from '@auth0/angular-jwt';
 import { OneMoreStepComponent } from './one-more-step/one-more-step.component';
 import { StoreViewComponent } from './store-view/store-view.component';
 import { AgmCoreModule, GoogleMapsAPIWrapper } from '@agm/core';
+import { MedicalComponent } from './medical/medical.component';
+import { GroceriesComponent } from './groceries/groceries.component';
+import { MapViewComponent } from './map-view/map-view.component';
 
 export function tokenGetter() {
   return sessionStorage.getItem('token');
@@ -45,7 +48,10 @@ const JWT_Module_Options: JwtModuleOptions = {
     CreateStoreComponent,
     AllnewsComponent,
     OneMoreStepComponent,
-    StoreViewComponent
+    StoreViewComponent,
+    MedicalComponent,
+    GroceriesComponent,
+    MapViewComponent
   ],
   imports: [
     BrowserModule,
