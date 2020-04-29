@@ -13,7 +13,7 @@
     margin-bottom: 20px;
     overflow: scroll;
     position: relative;
-    max-width: 350px;
+    /* max-width: 350px; */
 }
 
 .blocks{
