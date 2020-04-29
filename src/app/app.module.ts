@@ -24,6 +24,7 @@ import { AgmCoreModule, GoogleMapsAPIWrapper } from '@agm/core';
 import { MedicalComponent } from './medical/medical.component';
 import { GroceriesComponent } from './groceries/groceries.component';
 import { MapViewComponent } from './map-view/map-view.component';
+import { SmsViewComponent } from './sms-view/sms-view.component';
 
 export function tokenGetter() {
   return sessionStorage.getItem('token');
@@ -51,7 +52,8 @@ const JWT_Module_Options: JwtModuleOptions = {
     StoreViewComponent,
     MedicalComponent,
     GroceriesComponent,
-    MapViewComponent
+    MapViewComponent,
+    SmsViewComponent
   ],
   imports: [
     BrowserModule,
