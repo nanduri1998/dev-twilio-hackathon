@@ -25,19 +25,23 @@ const routes: Routes = [
   },
   {
     path: 'create-store',
-    component: CreateStoreComponent
+    component: CreateStoreComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'one-more-step/:storeid',
-    component: OneMoreStepComponent
+    component: OneMoreStepComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'sms/:storeid',
-    component: SmsViewComponent
+    component: SmsViewComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'store-view',
-    component: StoreViewComponent
+    component: StoreViewComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'admin',
@@ -45,24 +49,28 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    component: DashboardComponent
-    // canActivate: [AuthGuard]
+    component: DashboardComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'options-view',
-    component: OptionsViewComponent
+    component: OptionsViewComponent,
+    canActivate: [AuthGuard]
   },
   {
     path : 'allnews',
-    component: AllnewsComponent
+    component: AllnewsComponent,
+    canActivate: [AuthGuard]
   },
   {
     path : 'medical',
-    component: MedicalComponent
+    component: MedicalComponent,
+    canActivate: [AuthGuard]
   },
   {
     path : 'live-updates',
-    component: MapViewComponent
+    component: MapViewComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'register',
