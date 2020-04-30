@@ -6,22 +6,24 @@
 
         <div class="bottom-container">
             <div class="bottom-horizontal-scroll">
-                <div class="blocks">
-                    <div class="inps-grp">
-                        <input type="text" name="firstname" placeholder="what do you want?" autocomplete="off"
-                            id="what">
+                <form name="test" method="POST">
+                    <div class="blocks">
+                        <div class="inps-grp">
+                            <input type="text" name="q1" placeholder="what do you want?" autocomplete="off"
+                                id="what" [(ngModel)]="q1">
+                        </div>
+                        <div class="inps-grp">
+                            <input type="text" name="q2" placeholder="any instructions(optional)" autocomplete="off"
+                                id="any" [(ngModel)]="q2">
+                        </div>
+                        <button type="submit" (click)="sendsms()">SUBMIT</button>
                     </div>
-                    <div class="inps-grp">
-                        <input type="text" name="firstname" placeholder="any instructions(optional)" autocomplete="off"
-                            id="any">
-                    </div>
-                    <button>SUBMIT</button>
-                </div>
+                </form>
 
             </div>
         </div>
         <div class="busy-button">
-            <button>Go Back</button>
+            <button (click)="back()">Go Back</button>
         </div>
     </div>
 </div>
