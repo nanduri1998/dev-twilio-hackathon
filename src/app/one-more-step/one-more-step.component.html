@@ -2,22 +2,22 @@
     <div class="container-header">
         <h2>ONE MORE STEP</h2>
     </div>
-    
+
     <agm-map [latitude]="userlat" [longitude]="userlng" mapTypeId="roadmap" [zoom]="12" (mapClick)="getLatLng($event)">
         <agm-marker [latitude]="clicklat" [longitude]="clicklng" *ngIf="clicked"></agm-marker>
         <agm-info-window [disableAutoPan]="true" *ngIf="clicked">
             Hi, this is the content of the <strong>info window</strong>
-          </agm-info-window>
-        <div class="forms">
-            <div class="inps">
-                <div class="inps-grp">
-                    <input type="search" name="search" autocomplete="off" placeholder="Locate Store"id="search" required >
-                    
-                </div>
+        </agm-info-window>
+
+    </agm-map>
+    <!-- <div class="forms">
+        <div class="inps">
+            <div class="inps-grp">
+                <input type="search" name="search" autocomplete="off" placeholder="Locate Store" id="search" required>
+
             </div>
         </div>
-        
-    </agm-map>
+    </div> -->
     <div class="button-container">
         <button (click)="updateLatLng()">CREATE</button>
     </div>
