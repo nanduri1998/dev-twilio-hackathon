@@ -37,9 +37,7 @@ p {
   padding-left: 10px;
   padding-bottom: 10px;
 }
-a {
-  /* text-decoration: none; */
-}
+
 a:visited {
   color: #fff;
 }
@@ -73,3 +71,5 @@ p.last {
   left: 0;
   right: 0;
 }
+
+agm-map { height: 100%; }

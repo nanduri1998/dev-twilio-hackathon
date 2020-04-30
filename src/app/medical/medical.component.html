@@ -1,23 +1,18 @@
 <div class="container">
-    <!-- <agm-map></agm-map> -->
+    <agm-map [latitude]="places.lat" [longitude]="places.lng" mapTypeId="roadmap" [zoom]="12">
+        <agm-marker latitude="{{places.lat}}" longitude="{{places.lng}}" *ngIf="hotspot" openInfoWindow="true" animation="DROP">
+            <agm-info-window [disableAutoPan]="true" isOpen="true">
+                Your area is a hotspot
+            </agm-info-window>
+        </agm-marker>
+    </agm-map>
     <div class="enclosing-container">
 
         <div class="bottom-container">
             <div class="bottom-horizontal-scroll">
-                <div class="blocks">
-                    <h4 class="store-name">Srivastav medical centre</h4>
-                    <p>location</p>
-                    <button>CAll</button>
-                </div>
-                <div class="blocks">
-                    <h4 class="store-name">Srivastav medical centre</h4>
-                    <p>location</p>
-                    <button>CAll</button>
-                </div>
-                <div class="blocks">
-                    <h4 class="store-name">Srivastav</h4>
-                    <p>Location</p>
-                    <button>CAll</button>
+                <div class="blocks" *ngFor="let item of hotspots">
+                    <h4 class="store-name">{{item.district}}</h4>
+                    <p>{{item.state}}</p>
                 </div>
             </div>
         </div>

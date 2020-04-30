@@ -37,4 +37,8 @@ export class StoreViewComponent implements OnInit {
     this.router.navigate(['sms', storeid]);
   }
 
+  back() {
+    this.router.navigate(['/dashboard']);
+  }
+
 }

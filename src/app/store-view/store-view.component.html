@@ -1,6 +1,10 @@
 <div class="container">
     <agm-map [latitude]="userlat" [streetViewControl]="false" [longitude]="userlng" mapTypeId="roadmap" [zoom]="12" >
-        <agm-marker *ngFor="let places of stores" latitude="{{places.lat}}" longitude="{{places.lng}}"></agm-marker>
+        <agm-marker *ngFor="let places of stores" latitude="{{places.lat}}" longitude="{{places.lng}}">
+            <agm-info-window [disableAutoPan]="true" isOpen="true">
+                {{places.store_name}}
+            </agm-info-window>
+        </agm-marker>
     </agm-map>
     <div class="enclosing-container">
 
@@ -16,7 +20,7 @@
             </div>
         </div>
         <div class="busy-button">
-            <button>Go Back</button>
+            <button (click)="back()">Go Back</button>
         </div>
     </div>
 </div>
