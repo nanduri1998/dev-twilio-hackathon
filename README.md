@@ -48,4 +48,7 @@ ng build --prod
 
 ### Contributors
 - Ideas and Testing: Neeraj Durgaprasad Singh Rajput [@neon-github](https://github.com/neon-github)
-- Design and Frontend: Sreecharan 
+- Design and Frontend: Sreecharan Malee [@charan9999](https://github.com/charan9999)
+- Backend and APIs: 
+  - Srivastav Nanduri [@nanduri1998](https://github.com/nanduri1998) 
+  - Chaitanya Srikar Nistala [@ncsrikar](https://github.com/ncsrikar)
