@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { DashboardService } from '../services/dashboard.service';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-dashboard',
@@ -58,7 +59,10 @@ export class DashboardComponent implements OnInit {
     'West Bengal'
 
   ];
-  constructor(private dashboard: DashboardService, private router: Router) {
+
+  storeNotCreated = false;
+  authyid;
+  constructor(private dashboard: DashboardService, private router: Router, private http: HttpClient) {
     setInterval(() => {
       this.time = new Date();
     }, 1);
@@ -116,6 +120,15 @@ export class DashboardComponent implements OnInit {
   }, 30000);
  }
   ngOnInit() {
+    this.authyid = sessionStorage.getItem('authyid');
+    console.log(this.authyid);
+    this.http.get<any>('https://dev-twilio-hackathon.herokuapp.com/check_store/' + this.authyid).subscribe(data => {
+      if (data.status) {
+        this.storeNotCreated = false;
+      } else {
+        this.storeNotCreated = true;
+      }
+    });
     this.dashboard.getLocation().subscribe(data => {
       console.log(data);
       this.state = data.region;
