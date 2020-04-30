@@ -23,6 +23,17 @@ img {
   padding: 12px;
 }
 
+.message-block{
+  display: none;
+  height: 100vh;
+  padding: 12px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+}
+
 .container-header {
   border-bottom: 1px solid rgba(120, 120, 120, 0.1);
   width: 100% !important;
@@ -199,4 +210,13 @@ button {
   font-family: Montserrat;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 500px) {
+  .container {
+    display: none;
+  }
+  .message-block{
+    display: flex;
+  }
 }
