@@ -33,8 +33,9 @@ img {
   background: #01142f;
   padding: 20px;
   display: flex;
+  justify-content: space-evenly;
   width: 100%;
-  max-width: 150px;
+  max-width: 140px;
   align-items: center;
   margin: 5px;
   border-radius: 20px;
