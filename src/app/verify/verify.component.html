@@ -9,7 +9,7 @@
       <form class="otp" autocomplete="off" novalidate name="otp">
         <div class="inps">
           <div class="inps-grp">
-            <input maxlength="1" type="number" name="one" [(ngModel)]="otp.one" required (keyup)="keytab($event, 1)"
+            <input maxlength="1" type="number" name="one" autofocus [(ngModel)]="otp.one" required (keyup)="keytab($event, 1)"
               [(ngModel)]="phone">
           </div>
         </div>

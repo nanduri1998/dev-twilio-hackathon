@@ -120,7 +120,7 @@ export class DashboardComponent implements OnInit {
   }, 30000);
  }
   ngOnInit() {
-    this.authyid = sessionStorage.getItem('authyid');
+    this.authyid = localStorage.getItem('authyid');
     console.log(this.authyid);
     this.http.get<any>('https://dev-twilio-hackathon.herokuapp.com/check_store/' + this.authyid).subscribe(data => {
       if (data.status) {
@@ -149,8 +149,8 @@ export class DashboardComponent implements OnInit {
 
 
   logout() {
-    sessionStorage.removeItem('token');
-    sessionStorage.removeItem('authyid');
+    localStorage.removeItem('token');
+    localStorage.removeItem('authyid');
     this.router.navigate(['/register']);
   }
 

@@ -28,7 +28,7 @@ import { SmsViewComponent } from './sms-view/sms-view.component';
 import { NewsLocationComponent } from './news-location/news-location.component';
 
 export function tokenGetter() {
-  return sessionStorage.getItem('token');
+  return localStorage.getItem('token');
 }
 
 // tslint:disable-next-line: variable-name

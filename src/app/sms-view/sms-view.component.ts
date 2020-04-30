@@ -22,7 +22,7 @@ export class SmsViewComponent implements OnInit {
 
   ngOnInit() {
     this.storeId = this.route.snapshot.paramMap.get('storeid');
-    this.authyid = sessionStorage.getItem('authyid');
+    this.authyid = localStorage.getItem('authyid');
     this.http.get<any>('https://dev-twilio-hackathon.herokuapp.com/list_store/' + this.storeId).subscribe(data => {
       this.places.lat = data.storeInfo[0].lat;
       this.places.lng = data.storeInfo[0].lng;

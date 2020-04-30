@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
   constructor(private loginService: LoginService, private router: Router) { }
 
   ngOnInit() {
-    const token = sessionStorage.getItem('token');
+    const token = localStorage.getItem('token');
     if (token) {
       this.router.navigate(['/dashbaord']);
     }

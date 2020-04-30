@@ -10,7 +10,7 @@ export class AuthService {
   constructor(public jwtHelper: JwtHelperService, private rotuer: Router) { }
 
   public isAuthenticated(): boolean {
-    const token = sessionStorage.getItem('token');
+    const token = localStorage.getItem('token');
     if (!token) {
       return false;
     } else {

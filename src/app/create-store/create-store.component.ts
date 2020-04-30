@@ -18,7 +18,7 @@ export class CreateStoreComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
-    this.authyid = sessionStorage.getItem('authyid');
+    this.authyid = localStorage.getItem('authyid');
     console.log(this.authyid);
     this.http.get<any>('https://dev-twilio-hackathon.herokuapp.com/check_store/' + this.authyid).subscribe(data => {
       if (data.status) {

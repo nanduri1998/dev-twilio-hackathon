@@ -34,8 +34,8 @@ export class VerifyComponent implements OnInit {
       if (data.results.success) {
         if (data.flow === 'login') {
           this.verify.requestJWT(this.authyid).subscribe(data1 => {
-            sessionStorage.setItem('token', data1.jwt);
-            sessionStorage.setItem('authyid', data1.authyid);
+            localStorage.setItem('token', data1.jwt);
+            localStorage.setItem('authyid', data1.authyid);
             this.router.navigate(['/dashboard']);
           });
         } else if (data.flow === 'register') {

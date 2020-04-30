@@ -20,8 +20,8 @@ export class LoginComponent implements OnInit {
 
   register() {
     this.detailsService.postDetails(this.firstname, this.lastname, this.age, this.authyid).subscribe(data => {
-      sessionStorage.setItem('token', data.jwt);
-      sessionStorage.setItem('authyid', data.authyid);
+      localStorage.setItem('token', data.jwt);
+      localStorage.setItem('authyid', data.authyid);
       this.router.navigate(['/dashboard']);
     });
   }
