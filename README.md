@@ -20,10 +20,10 @@ Design of the front end and UI is mobile first giving fluid experience to the us
 
 ### Links to Repos
  - Frontend - Angular Project
-	- Link to GitHub: [https://github.com/nanduri1998/dev-twilio-hackathon](Frontend Repository)
+	- Link to GitHub: [Frontend](https://github.com/nanduri1998/dev-twilio-hackathon)
  - Backend - Express MySQL NodeJs
-	- Link to GitHub: [https://github.com/nanduri1998/dev-twilio-server](Backend Repository)
- - The Web App is hosted on Firebase Hosting at the URL [https://saath-covid19.web.app] (Saath-COVID19)
+	- Link to GitHub: [Backend](https://github.com/nanduri1998/dev-twilio-server)
+ - The Web App is hosted on Firebase Hosting at the URL [Saath-COVID19](http://saath-covid19.web.app/)
  - The Backed is hosted on Heroku
  - The MySQL database is hosted on AWS RDS.
 
@@ -31,4 +31,7 @@ Design of the front end and UI is mobile first giving fluid experience to the us
 1. Twilio Authy API for Passwordless Authentication
 2. Twilio Programmable SMS for sending SMS
 
-	
+### Contributors
+Ideas and Testing: Neeraj Durgaprasad Singh Rajput [@neon-github](https://github.com/neon-github)
+Design and Frontend: [@charan9999](https://github.com/charan9999)
+Backend and APIs: [@nanduri1998](https://github.com/nanduri1998) [@ncsrikar](https://github.com/ncsrikar)
