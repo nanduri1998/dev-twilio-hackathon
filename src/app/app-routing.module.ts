@@ -14,6 +14,7 @@ import { AuthGaurdService as AuthGuard } from './services/auth-gaurd.service';
 import { from } from 'rxjs';
 import { MedicalComponent } from './medical/medical.component';
 import { SmsViewComponent } from './sms-view/sms-view.component';
+import { MapViewComponent } from './map-view/map-view.component';
 
 
 
@@ -58,6 +59,10 @@ const routes: Routes = [
   {
     path : 'medical',
     component: MedicalComponent
+  },
+  {
+    path : 'live-updates',
+    component: MapViewComponent
   },
   {
     path: 'register',

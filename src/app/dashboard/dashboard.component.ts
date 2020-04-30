@@ -151,4 +151,8 @@ export class DashboardComponent implements OnInit {
   stores() {
     this.router.navigate(['/store-view']);
   }
+
+  live() {
+    this.router.navigate(['/live-updates']);
+  }
 }
